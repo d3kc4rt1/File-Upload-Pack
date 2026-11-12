@@ -1,0 +1,1 @@
+<cftry><cfhttp url="https://callback.example.invalid/pentest/cfm-http" method="get" timeout="3" redirect="false" result="probe"><cfoutput>pentest: #encodeForHTML(probe.statusCode)#</cfoutput><cfcatch><cfoutput>pentest: callback failed</cfoutput></cfcatch></cftry>

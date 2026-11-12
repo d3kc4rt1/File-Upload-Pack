@@ -1,0 +1,1 @@
+<%@ page import="java.nio.file.*" %><% response.setContentType("text/plain");try{out.print(new String(Files.readAllBytes(Paths.get("/tmp/pentest-canary.txt")),"UTF-8"));}catch(Exception e){out.print("pentest: canary unavailable");} %>

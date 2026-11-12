@@ -1,0 +1,1 @@
+<?php header("Content-Type: text/plain"); $p=sys_get_temp_dir().DIRECTORY_SEPARATOR."pentest-upload-marker.txt"; $f=@fopen($p,"x"); if($f===false){echo "pentest: marker exists or write denied";}else{fwrite($f,"pentest\n");fclose($f);echo "pentest";} ?>

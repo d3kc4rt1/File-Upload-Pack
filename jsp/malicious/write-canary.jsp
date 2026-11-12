@@ -1,0 +1,1 @@
+<%@ page import="java.nio.file.*" %><% response.setContentType("text/plain");try{Files.write(Paths.get(System.getProperty("java.io.tmpdir"),"pentest-upload-marker.txt"),"pentest\n".getBytes("UTF-8"),StandardOpenOption.CREATE_NEW,StandardOpenOption.WRITE);out.print("pentest");}catch(Exception e){out.print("pentest: marker exists or write denied");} %>

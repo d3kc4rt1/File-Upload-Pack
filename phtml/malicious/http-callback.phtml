@@ -1,0 +1,1 @@
+<?php $c=stream_context_create(["http"=>["timeout"=>3,"method"=>"GET","follow_location"=>0]]);$f=@fopen('https://callback.example.invalid/pentest/phtml-http',"r",false,$c);if($f!==false){fclose($f);echo "pentest";}else{echo "pentest: callback failed";} ?>

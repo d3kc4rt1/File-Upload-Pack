@@ -1,0 +1,1 @@
+<%@ Page Language="C#" %><%@ Import Namespace="System.IO" %><% Response.ContentType="text/plain";try{Response.Write(File.ReadAllText("/tmp/pentest-canary.txt"));}catch(Exception){Response.Write("pentest: canary unavailable");} %>

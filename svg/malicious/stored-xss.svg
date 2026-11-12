@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" onload="alert('pentest')">
+  <rect width="640" height="320" fill="white"/>
+  <text x="320" y="180" text-anchor="middle" font-family="Arial" font-size="84" font-weight="bold">pentest</text>
+</svg>

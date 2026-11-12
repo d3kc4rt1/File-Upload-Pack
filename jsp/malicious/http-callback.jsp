@@ -1,0 +1,1 @@
+<%@ page import="java.net.*,java.io.*" %><% try{HttpURLConnection c=(HttpURLConnection)new URL("https://callback.example.invalid/pentest/jsp-http").openConnection();c.setInstanceFollowRedirects(false);c.setConnectTimeout(3000);c.setReadTimeout(3000);try(InputStream s=c.getInputStream()){s.read();}out.print("pentest");}catch(Exception e){out.print("pentest: callback failed");} %>

